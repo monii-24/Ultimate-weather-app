@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --font-geist: "Geist", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-geist), system-ui, sans-serif;
+  background: #0a0f1e;
+  color: white;
+}
+
+/* Hide scrollbar for horizontal forecast strip */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Leaflet dark map */
+.leaflet-container {
+  background: #0d1117;
+}
+
+/* Custom leaflet zoom control styling */
+.leaflet-control-zoom a {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+}
+
+.leaflet-control-zoom a:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(4px);
+}
+
+.leaflet-control-attribution a {
+  color: rgba(56, 189, 248, 0.7) !important;
+}
+
+/* Animated gradient background */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
