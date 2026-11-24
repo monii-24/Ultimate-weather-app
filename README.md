@@ -2,6 +2,8 @@
 
 A stunning, immersive weather application built with **Next.js 14**, **Tailwind CSS**, **Leaflet.js**, and **Framer Motion**.
 
+🔗 *Live Demo:* https://ultimate-weather-app-inky.vercel.app
+
 ![Hero](./public/hero-bg.jpg)
 
 ## ✨ Features
