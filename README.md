@@ -49,7 +49,7 @@ NEXT_PUBLIC_OWM_API_KEY=your_openweathermap_api_key_here
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) 🎉
+Open https://ultimate-weather-app-inky.vercel.app/ 🎉
 
 ### 5. Build for production
 
